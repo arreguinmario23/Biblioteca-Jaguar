@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconfont/material-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>BIBLIOTECA JAGUAR</title>
+</head>
+<body>
+    <nav class="navbar bg-dark">
+        <a class="navbar-brand colorTexto" href="#">
+            <i class="material-icons">book</i>
+            BIBLIOTECA JAGUAR
+        </a>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header bg-dark colorFondo colorTexto">
+                        Registro
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">account_circle</i>
+                                </div>
+                            </div>
+                            <input type="text" name="user" id="user" 
+                            class="form-control" placeholder="Nombre de usuario">
+                        </div>
+
+                        <div class="input-group  mt-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">account_circle</i>
+                                </div>
+                            </div>
+                            <input type="text" name="user" id="nombre" 
+                            class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="input-group mt-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">https</i>
+                                </div>
+                            </div>
+                            <input type="password" name="pass" id="pass"
+                            class="form-control" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary" onclick="agregarUser()" data-toggle='modal' data-target='#usagregado'>Crear</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <!-- Es una ventana modal para eliminar -->
+<div class="modal fade" id="usagregado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Usuario Agregado</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <p>Usuario Agregado Exitosamente</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button"  class="btn btn-primary" data-dismiss="modal">
+              Aceptar
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="card mt-5"></div>
+    <footer class="container-fluid">
+        <div class="row bg-dark text-light">
+            <div class="col">
+                <p class="text-center">Copyright Biblioteca Jaguar (c) 2020. Todos los derechos reservados.</p>
+                <p class="text-center"><a href="mailto:">JaguaresUnidos</a></p>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/addus.js"></script>
+</body>
+</html>
